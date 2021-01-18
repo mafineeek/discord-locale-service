@@ -26,5 +26,6 @@ client.on("message", (message) => {
         }
     }
 }
+```
 
 if you want help - contact me here `мαƒιиєєєк#9999`

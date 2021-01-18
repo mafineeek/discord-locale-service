@@ -29,5 +29,5 @@
         "lint:fix": "tslint --fix --project ."
     },
     "types": "dist/index.d.ts",
-    "version": "1.0.1"
+    "version": "1.0.4"
 }
