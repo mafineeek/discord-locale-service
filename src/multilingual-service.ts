@@ -2,7 +2,6 @@ import { MessageEmbed } from 'discord.js';
 import path from 'path';
 
 import { FileData } from './models/file-models';
-import { EmbedBuilder } from './services/embed-builder';
 import { FileUtils, JsonUtils, RegexUtils, StringUtils } from './utils';
 
 let Config = require('../config/config.json');
@@ -40,7 +39,6 @@ export class MultilingualService {
                 let ref = JsonUtils.joinString(refData);
                 internalData.refs[refNam] = ref;
             }
-            internalData.embeds = EmbedBuilder.buildEmbeds(rawFileData);
 
             this.internalDatas[langCode] = internalData;
         }
@@ -68,25 +66,6 @@ export class MultilingualService {
         }
 
         return fileData;
-    }
-
-    public getEmbed(
-        embedName: string,
-        langCode: string,
-        variables?: { [name: string]: string }
-    ): MessageEmbed {
-        let embed = this.internalDatas[langCode]?.embeds[embedName];
-        if (!embed) {
-            return;
-        }
-
-        let newEmbed = new MessageEmbed(embed);
-
-        if (!variables) {
-            return newEmbed;
-        }
-
-        return EmbedBuilder.populateEmbed(newEmbed, variables);
     }
 
     public getRef(

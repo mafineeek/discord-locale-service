@@ -16,10 +16,10 @@ client.on("message", (message) => {
 !! It must be named as lang.<language code>.json !!
 ```json
 {
-    refs:{
+    "refs":{
         "TEST": "Example test with example {{var}}"
     },
-    embeds:{
+    "embeds":{
         "example":{
             "title": "Title",
             "description": "desc"
