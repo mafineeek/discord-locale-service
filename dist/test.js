@@ -15,10 +15,6 @@ client.on('ready', () => {
 });
 client.on('message', async (msg) => {
     if (msg.content === 'test') {
-        let embed = multilingualService.getEmbed('example', 'en', {
-            EXAMPLE_VARIABLE: 'Example Variable',
-        });
-        await msg.channel.send(embed);
         let ref = multilingualService.getRef('exampleReference', 'en');
         await msg.channel.send(ref);
     }

@@ -18,12 +18,6 @@ client.on("message", (message) => {
 {
     "refs":{
         "TEST": "Example test with example {{var}}"
-    },
-    "embeds":{
-        "example":{
-            "title": "Title",
-            "description": "desc"
-        }
     }
 }
 ```

@@ -4,9 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MultilingualService = void 0;
-const discord_js_1 = require("discord.js");
 const path_1 = __importDefault(require("path"));
-const embed_builder_1 = require("./services/embed-builder");
 const utils_1 = require("./utils");
 let Config = require('../config/config.json');
 class MultilingualService {
@@ -30,7 +28,6 @@ class MultilingualService {
                 let ref = utils_1.JsonUtils.joinString(refData);
                 internalData.refs[refNam] = ref;
             }
-            internalData.embeds = embed_builder_1.EmbedBuilder.buildEmbeds(rawFileData);
             this.internalDatas[langCode] = internalData;
         }
     }
@@ -52,17 +49,6 @@ class MultilingualService {
             return;
         }
         return fileData;
-    }
-    getEmbed(embedName, langCode, variables) {
-        let embed = this.internalDatas[langCode]?.embeds[embedName];
-        if (!embed) {
-            return;
-        }
-        let newEmbed = new discord_js_1.MessageEmbed(embed);
-        if (!variables) {
-            return newEmbed;
-        }
-        return embed_builder_1.EmbedBuilder.populateEmbed(newEmbed, variables);
     }
     getRef(refName, langCode, variables) {
         let ref = this.internalDatas[langCode]?.refs[refName];

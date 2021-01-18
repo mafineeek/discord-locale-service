@@ -231,14 +231,9 @@
         "signature": "5f642089e709e22b70bf179d1adff46fc6496f3c7e38770ed8826771a253b144",
         "affectsGlobalScope": false
       },
-      "./src/services/embed-builder.ts": {
-        "version": "2e93fb7edf4e86fdb88ebfe8b0e2a41ab98d59e8342efcccc448cbbd6ba58afc",
-        "signature": "cde63023f2a656d3f5c9af182564b8dd718b6314d0894736a47bc3bf5e8c6776",
-        "affectsGlobalScope": false
-      },
       "./src/multilingual-service.ts": {
-        "version": "0c03c0ae0b45fe97c7e4f521f6a31f93e1edd07d0c0383e635cfe316c1da934d",
-        "signature": "29e538a07f222d06b9663358cf6354d963b3691ae8e0f446dcc6fd8265557aae",
+        "version": "11fa9baa0bd25d757e9d3397295750921e9cfa6d046a7a7740a8816f1a72450c",
+        "signature": "b422ba5efdd51b3a42b9bf15f7145e90e072660647ec2562654476cdac173d74",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
@@ -247,7 +242,7 @@
         "affectsGlobalScope": false
       },
       "./src/test.ts": {
-        "version": "9124beda51a9c42922ff08ae1438a6ec4708ba2ffbd12b383e5377c0ebe5fb19",
+        "version": "137a1caba0746c0d55ff506ebd2ec1f7af2cd7d645c7dd93981d8c9ab3c9dc97",
         "signature": "8860ab7d0dfaadda5a136e010fa1a13c839c655e85b02924c2effb42cf25941e",
         "affectsGlobalScope": false
       },
@@ -687,12 +682,6 @@
         "./node_modules/@types/node/path.d.ts",
         "./node_modules/discord.js/typings/index.d.ts",
         "./src/models/file-models.ts",
-        "./src/services/embed-builder.ts",
-        "./src/utils/index.ts"
-      ],
-      "./src/services/embed-builder.ts": [
-        "./node_modules/discord.js/typings/index.d.ts",
-        "./src/models/file-models.ts",
         "./src/utils/index.ts"
       ],
       "./src/test.ts": [
@@ -894,13 +883,6 @@
       "./src/models/file-models.ts": [
         "./node_modules/discord.js/typings/index.d.ts"
       ],
-      "./src/multilingual-service.ts": [
-        "./node_modules/discord.js/typings/index.d.ts"
-      ],
-      "./src/services/embed-builder.ts": [
-        "./node_modules/discord.js/typings/index.d.ts",
-        "./src/models/file-models.ts"
-      ],
       "./src/utils/index.ts": [
         "./src/utils/file-utils.ts",
         "./src/utils/json-utils.ts",
@@ -999,7 +981,6 @@
       "./src/index.ts",
       "./src/models/file-models.ts",
       "./src/multilingual-service.ts",
-      "./src/services/embed-builder.ts",
       "./src/test.ts",
       "./src/utils/file-utils.ts",
       "./src/utils/index.ts",
